@@ -1,5 +1,5 @@
 @extends("layouts.admin.default")
-@section("title", "Quanh")
+@section("title", "Products")
 
 
 @section("content")
@@ -56,8 +56,9 @@
                             Active
                             <?php endif; ?>
                         </td>
-                        <td>{{$prd ->created_at}}</td>
-                        <td class="teẽex"><img width="150px" height="150px" src="{{$prd -> images}}" alt=""></td>
+                        <td>{{$prd ->importedDate}}</td>
+                        <td class="text-center"><img width="150px" height="150px" src="/image/{{$prd -> images}}"
+                                                     alt=""></td>
                         <td class="text-center">
                                 <?php if ($prd->status == 0): ?>
                             <a href="/product-delete/{{$prd -> id}}"
@@ -70,7 +71,6 @@
 
                         <td class="text-center"><a href="/product-edit/{{$prd -> id}}"
                                                    class="btn btn-primary btn-sm">Edit</a>
-                        </td>
                         </td>
                     </tr>
                 @endforeach

@@ -1,8 +1,11 @@
 @vite(["resources/sass/app.scss", "resources/js/app.js"])
+
 <body style="margin: 0">
 <div class="header" style="height: 60px">
     <div class="container d-flex" style="justify-content: space-between">
-        <img src="https://9xgarden.com/wp-content/uploads/2021/03/cropped-9x-garden-logo-21-4.png">
+        <a href="/welcome">
+            <img src="https://9xgarden.com/wp-content/uploads/2021/03/cropped-9x-garden-logo-21-4.png">
+        </a>
 
         <a href="#" class="mt-auto mb-auto btn" style="">Tài khoản</a>
     </div>
